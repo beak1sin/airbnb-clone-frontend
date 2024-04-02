@@ -7,14 +7,14 @@ export default function SocialLogin() {
   const kakaoParams = {
     response_type: "code",
     client_id: "53fc0ecca4b497fbc215cf23e1b300fd",
-    redirect_uri: "http://127.0.0.1:3000/social/kakao",
+    redirect_uri: "https://airbnbclonejb.shop/social/kakao",
   };
   const kakaoParam = new URLSearchParams(kakaoParams).toString();
 
   const naverParams = {
     response_type: "code",
     client_id: "fpoOdeasfK9LdgkuknhQ",
-    redirect_uri: "http://127.0.0.1:3000/social/naver",
+    redirect_uri: "https://airbnbclonejb.shop/social/naver",
     state: Cookie.get("csrftoken") ?? "",
   };
 
