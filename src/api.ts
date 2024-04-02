@@ -8,7 +8,8 @@ import { useParams } from "react-router-dom";
 const axiosInstance = axios.create({
     baseURL: process.env.NODE_ENV === "development" ?
      "http://127.0.0.1:8080/api/v1/" : 
-     "https://airbnbclone-1cq0.onrender.com/api/v1/",
+    //  "https://airbnbclone-1cq0.onrender.com/api/v1/",
+    "https://backend.airbnbclonejb.shop/api/v1/",
     withCredentials: true, // 쿠키도 같이 보내겠다는 뜻임. 로그인관련 세션아이디를 가져올수있음.
 })
 
